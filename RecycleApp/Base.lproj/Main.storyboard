@@ -145,11 +145,11 @@
             <objects>
                 <viewController id="d6N-6J-6Tx" customClass="SignUpViewController" customModule="RecycleApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="N6I-y8-nHE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="pSA-zn-rLf">
-                                <rect key="frame" x="40" y="40" width="334" height="426"/>
+                                <rect key="frame" x="40" y="84" width="334" height="426"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ads-vC-zGn">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -244,8 +244,8 @@
                                     <segue destination="72s-PG-TW2" kind="show" id="Khg-gR-xot"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="tef-Ei-Qh1">
-                                <rect key="frame" x="44" y="213" width="327" height="151"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="h9Q-op-RX1">
+                                <rect key="frame" x="0.0" y="166" width="414" height="620"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Lorem Ipsum" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F4V-cM-DwT">
                                 <rect key="frame" x="86" y="423" width="237" height="34"/>
@@ -253,17 +253,58 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="tef-Ei-Qh1">
+                                <rect key="frame" x="44" y="213" width="327" height="151"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TAx-cR-8jQ" userLabel="Camera">
+                                <rect key="frame" x="23" y="795.5" width="141" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="141" id="cEb-dG-r65"/>
+                                </constraints>
+                                <color key="tintColor" red="0.18823529410000001" green="0.67843137249999996" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="camera.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="camera:" destination="MJ4-kS-XxA" eventType="touchUpInside" id="7RG-xF-vrE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6D-Ef-alv" userLabel="CameraRoll">
+                                <rect key="frame" x="245" y="794" width="146" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146" id="1Tf-DO-VwG"/>
+                                    <constraint firstAttribute="height" constant="87.5" id="FAc-06-UxP"/>
+                                </constraints>
+                                <color key="tintColor" red="0.18823529410000001" green="0.67843137249999996" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" backgroundImage="photo.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="cameraRoll:" destination="MJ4-kS-XxA" eventType="touchUpInside" id="nnX-4u-WiM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="xn7-Cn-KaW" firstAttribute="top" secondItem="Pya-hN-kNE" secondAttribute="top" constant="42" id="Az0-a1-JfC"/>
-                            <constraint firstItem="tef-Ei-Qh1" firstAttribute="top" secondItem="xn7-Cn-KaW" secondAttribute="bottom" constant="97" id="jvt-0N-QMn"/>
-                            <constraint firstItem="xn7-Cn-KaW" firstAttribute="leading" secondItem="Pya-hN-kNE" secondAttribute="leading" constant="288" id="sKy-v1-W2f"/>
+                            <constraint firstItem="Pya-hN-kNE" firstAttribute="trailing" secondItem="B6D-Ef-alv" secondAttribute="trailing" constant="23" id="5Qg-oR-h6n"/>
+                            <constraint firstItem="B6D-Ef-alv" firstAttribute="top" secondItem="h9Q-op-RX1" secondAttribute="bottom" constant="7" id="ABT-Xi-4ye"/>
+                            <constraint firstItem="h9Q-op-RX1" firstAttribute="leading" secondItem="Pya-hN-kNE" secondAttribute="leading" id="Coi-TI-dx5"/>
+                            <constraint firstItem="B6D-Ef-alv" firstAttribute="top" secondItem="h9Q-op-RX1" secondAttribute="bottom" constant="7" id="MHB-3r-UE3"/>
+                            <constraint firstItem="h9Q-op-RX1" firstAttribute="top" secondItem="xn7-Cn-KaW" secondAttribute="bottom" constant="50" id="R3A-SV-l8y"/>
+                            <constraint firstItem="B6D-Ef-alv" firstAttribute="top" secondItem="h9Q-op-RX1" secondAttribute="bottom" constant="7" id="TxJ-uF-dFO"/>
+                            <constraint firstItem="TAx-cR-8jQ" firstAttribute="leading" secondItem="Pya-hN-kNE" secondAttribute="leading" constant="23" id="V8d-03-jW2"/>
+                            <constraint firstItem="TAx-cR-8jQ" firstAttribute="top" secondItem="h9Q-op-RX1" secondAttribute="bottom" constant="9" id="WHm-Iw-z8F"/>
+                            <constraint firstItem="Pya-hN-kNE" firstAttribute="trailing" secondItem="xn7-Cn-KaW" secondAttribute="trailing" constant="66" id="Zyy-Xb-TRc"/>
+                            <constraint firstAttribute="bottom" secondItem="TAx-cR-8jQ" secondAttribute="bottom" constant="19" id="abp-my-Mjs"/>
+                            <constraint firstItem="tef-Ei-Qh1" firstAttribute="top" secondItem="xn7-Cn-KaW" secondAttribute="bottom" constant="97" id="gM1-s7-OFV"/>
+                            <constraint firstItem="xn7-Cn-KaW" firstAttribute="top" secondItem="Pya-hN-kNE" secondAttribute="top" constant="42" id="lTf-9e-kMW"/>
+                            <constraint firstItem="h9Q-op-RX1" firstAttribute="trailing" secondItem="Pya-hN-kNE" secondAttribute="trailing" id="tvU-J0-1Yf"/>
+                            <constraint firstAttribute="bottom" secondItem="B6D-Ef-alv" secondAttribute="bottom" constant="15.5" id="yKW-mK-evd"/>
                             <constraint firstItem="tef-Ei-Qh1" firstAttribute="leading" secondItem="Pya-hN-kNE" secondAttribute="leading" constant="44" id="ywK-eT-eQZ"/>
                             <constraint firstItem="Pya-hN-kNE" firstAttribute="trailing" secondItem="tef-Ei-Qh1" secondAttribute="trailing" constant="43" id="zyw-vR-dX1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Pya-hN-kNE"/>
                     </view>
+                    <connections>
+                        <outlet property="Logo" destination="tef-Ei-Qh1" id="VjY-1v-xbg"/>
+                        <outlet property="imageView" destination="h9Q-op-RX1" id="nlj-Kh-B4n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fX7-dn-cHV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -288,10 +329,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tsY-gY-AzU"/>
+        <segue reference="Imj-ro-Ot5"/>
         <segue reference="Khg-gR-xot"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Logo" width="173.5" height="151"/>
+        <image name="camera.fill" catalog="system" width="128" height="96"/>
+        <image name="photo.fill" catalog="system" width="128" height="93"/>
     </resources>
 </document>
