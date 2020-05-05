@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DA38D40CE1921CDD96D5AD0 /* libPods-RecycleApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0452502396FB2DF83C674558 /* libPods-RecycleApp.a */; };
 		830C3D8F22E7523E001FA4E7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830C3D8E22E7523E001FA4E7 /* Constants.swift */; };
 		8314D43322E644CC001D044A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314D43222E644CC001D044A /* AppDelegate.swift */; };
 		8314D43722E644CC001D044A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314D43622E644CC001D044A /* ViewController.swift */; };
@@ -17,16 +18,14 @@
 		8314D44922E64520001D044A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314D44822E64520001D044A /* LoginViewController.swift */; };
 		8314D44B22E6452C001D044A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314D44A22E6452C001D044A /* HomeViewController.swift */; };
 		8397D20E22E64A7500CB78DD /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8397D20D22E64A7500CB78DD /* Utilities.swift */; };
-		DD02B2B5B9E79FF19AD92DDC /* Pods_RecycleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 386F395D0AB5AE0C3F26B58A /* Pods_RecycleApp.framework */; };
 		E3259E39244DDCCE00E10578 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3259E38244DDCCD00E10578 /* SceneDelegate.swift */; };
 		E3259E3B244DE05A00E10578 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E3259E3A244DE05900E10578 /* GoogleService-Info.plist */; };
+		E3E6490E245EE2BE009C6C37 /* recycleMaterial.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E3E6490D245EE2BE009C6C37 /* recycleMaterial.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		266E92BF52F2752B81465D0D /* Pods-RecycleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecycleApp.release.xcconfig"; path = "Target Support Files/Pods-RecycleApp/Pods-RecycleApp.release.xcconfig"; sourceTree = "<group>"; };
-		386F395D0AB5AE0C3F26B58A /* Pods_RecycleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecycleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EB904DEE46AC83AE3D8193B /* Pods-RecycleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecycleApp.release.xcconfig"; path = "Target Support Files/Pods-RecycleApp/Pods-RecycleApp.release.xcconfig"; sourceTree = "<group>"; };
-		6395FDC6E70F2F2B54428A34 /* Pods-RecycleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecycleApp.debug.xcconfig"; path = "Target Support Files/Pods-RecycleApp/Pods-RecycleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		0452502396FB2DF83C674558 /* libPods-RecycleApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RecycleApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1745CE03BB2FB0C0816DA1A0 /* Pods-RecycleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecycleApp.release.xcconfig"; path = "Target Support Files/Pods-RecycleApp/Pods-RecycleApp.release.xcconfig"; sourceTree = "<group>"; };
 		830C3D8E22E7523E001FA4E7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8314D42F22E644CC001D044A /* RecycleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecycleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8314D43222E644CC001D044A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,9 +38,10 @@
 		8314D44822E64520001D044A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8314D44A22E6452C001D044A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8397D20D22E64A7500CB78DD /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		ACB20647BFB76A962B3E918B /* Pods-RecycleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecycleApp.debug.xcconfig"; path = "Target Support Files/Pods-RecycleApp/Pods-RecycleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		91795A9236EF3C3A0DB7B513 /* Pods-RecycleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecycleApp.debug.xcconfig"; path = "Target Support Files/Pods-RecycleApp/Pods-RecycleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E3259E38244DDCCD00E10578 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E3259E3A244DE05900E10578 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E3E6490D245EE2BE009C6C37 /* recycleMaterial.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = recycleMaterial.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD02B2B5B9E79FF19AD92DDC /* Pods_RecycleApp.framework in Frameworks */,
+				3DA38D40CE1921CDD96D5AD0 /* libPods-RecycleApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,18 +59,16 @@
 		256061AB78805D7F9BD3C3ED /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ACB20647BFB76A962B3E918B /* Pods-RecycleApp.debug.xcconfig */,
-				266E92BF52F2752B81465D0D /* Pods-RecycleApp.release.xcconfig */,
-				6395FDC6E70F2F2B54428A34 /* Pods-RecycleApp.debug.xcconfig */,
-				5EB904DEE46AC83AE3D8193B /* Pods-RecycleApp.release.xcconfig */,
+				91795A9236EF3C3A0DB7B513 /* Pods-RecycleApp.debug.xcconfig */,
+				1745CE03BB2FB0C0816DA1A0 /* Pods-RecycleApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		4BB4075EEC3AE105084101BD /* Frameworks */ = {
+		3A48A05F070A224FE23B50D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				386F395D0AB5AE0C3F26B58A /* Pods_RecycleApp.framework */,
+				0452502396FB2DF83C674558 /* libPods-RecycleApp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -78,10 +76,11 @@
 		8314D42622E644CC001D044A = {
 			isa = PBXGroup;
 			children = (
+				E3E6490D245EE2BE009C6C37 /* recycleMaterial.mlmodel */,
 				8314D43122E644CC001D044A /* RecycleApp */,
 				8314D43022E644CC001D044A /* Products */,
 				256061AB78805D7F9BD3C3ED /* Pods */,
-				4BB4075EEC3AE105084101BD /* Frameworks */,
+				3A48A05F070A224FE23B50D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,11 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8314D44322E644CD001D044A /* Build configuration list for PBXNativeTarget "RecycleApp" */;
 			buildPhases = (
-				96261C93D747DB12A9B86BBA /* [CP] Check Pods Manifest.lock */,
+				44F7217B6B5D3C847EDC4A3B /* [CP] Check Pods Manifest.lock */,
 				8314D42B22E644CC001D044A /* Sources */,
 				8314D42C22E644CC001D044A /* Frameworks */,
 				8314D42D22E644CC001D044A /* Resources */,
-				7D48E628917999722CE92F9E /* [CP] Embed Pods Frameworks */,
+				414AB9C02EF108C3FE8E3415 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -199,24 +198,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7D48E628917999722CE92F9E /* [CP] Embed Pods Frameworks */ = {
+		414AB9C02EF108C3FE8E3415 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RecycleApp/Pods-RecycleApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RecycleApp/Pods-RecycleApp-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RecycleApp/Pods-RecycleApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RecycleApp/Pods-RecycleApp-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RecycleApp/Pods-RecycleApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RecycleApp/Pods-RecycleApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		96261C93D747DB12A9B86BBA /* [CP] Check Pods Manifest.lock */ = {
+		44F7217B6B5D3C847EDC4A3B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -249,6 +248,7 @@
 				8314D43322E644CC001D044A /* AppDelegate.swift in Sources */,
 				8397D20E22E64A7500CB78DD /* Utilities.swift in Sources */,
 				8314D44722E64515001D044A /* SignUpViewController.swift in Sources */,
+				E3E6490E245EE2BE009C6C37 /* recycleMaterial.mlmodel in Sources */,
 				8314D44922E64520001D044A /* LoginViewController.swift in Sources */,
 				8314D44B22E6452C001D044A /* HomeViewController.swift in Sources */,
 				830C3D8F22E7523E001FA4E7 /* Constants.swift in Sources */,
@@ -394,7 +394,7 @@
 		};
 		8314D44422E644CD001D044A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6395FDC6E70F2F2B54428A34 /* Pods-RecycleApp.debug.xcconfig */;
+			baseConfigurationReference = 91795A9236EF3C3A0DB7B513 /* Pods-RecycleApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -413,7 +413,7 @@
 		};
 		8314D44522E644CD001D044A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EB904DEE46AC83AE3D8193B /* Pods-RecycleApp.release.xcconfig */;
+			baseConfigurationReference = 1745CE03BB2FB0C0816DA1A0 /* Pods-RecycleApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
