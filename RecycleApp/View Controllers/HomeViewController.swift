@@ -9,12 +9,17 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var Logo: UIImageView!
     @IBOutlet weak var predictionText: UILabel!
     @IBOutlet weak var infoText: UITextField!
+    @IBOutlet weak var predictionInfoText: UILabel!
+    @IBOutlet weak var CameraBtn: UIButton!
+    @IBOutlet weak var photoBtn: UIButton!
+    @IBOutlet weak var tryAgainBtn: UIButton!
     
     var model:recycleMaterial!
    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.predictionText.alpha = 0
+        self.tryAgainBtn.alpha = 0
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,7 +50,6 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         }
     }
 
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
         imageView.image = image
@@ -53,7 +57,10 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
         self.Logo.alpha = 0
         self.infoText.alpha = 0
+        self.CameraBtn.alpha = 0
+        self.photoBtn.alpha = 0
         self.predictionText.alpha = 1
+        self.tryAgainBtn.alpha = 1
         
         //Resize image
         //convert the image size
@@ -98,7 +105,32 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
                 
         predictionText.text = "Recycle material:  \(prediction.label)"
         print("\(prediction.labelProbability)")
-
+        
+        if prediction.label == "plastic" {
+            predictionInfoText.text = "Black bin"
+            print("Black bin")
+        }
+        else if  prediction.label == "metal" {
+            predictionInfoText.text = "Green bin"
+            print("Green Bin")
+        }
+        
+        else if  prediction.label == "paper" {
+            predictionInfoText.text = "Green bin"
+            print("Green Bin")
+        }
+        else if  prediction.label == "glass" {
+            predictionInfoText.text = "This should be brought to the nearest bottle bank"
+            print("Bottle bank")
+        }
+        else {
+            print("Try again")
+            predictionInfoText.text = "Try again"
+        }
+        
     }
+    
+    
+    
 }
 
