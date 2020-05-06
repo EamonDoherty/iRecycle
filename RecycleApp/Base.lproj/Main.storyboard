@@ -300,9 +300,17 @@
                                     <segue destination="MJ4-kS-XxA" kind="show" id="F7d-hL-P5n"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdu-xD-DDo">
+                                <rect key="frame" x="118" y="820" width="180" height="30"/>
+                                <state key="normal" title="Share with friends?"/>
+                                <connections>
+                                    <action selector="socialShareBtn:" destination="MJ4-kS-XxA" eventType="touchUpInside" id="IKi-b6-wbd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="cdu-xD-DDo" firstAttribute="top" secondItem="WbI-rD-yjn" secondAttribute="bottom" constant="4" id="2G5-UA-SNk"/>
                             <constraint firstItem="WbI-rD-yjn" firstAttribute="top" secondItem="qER-NM-H8D" secondAttribute="bottom" constant="1" id="2Oh-BX-rlT"/>
                             <constraint firstItem="Pya-hN-kNE" firstAttribute="trailing" secondItem="xn7-Cn-KaW" secondAttribute="trailing" constant="20" id="2d5-2g-bB0"/>
                             <constraint firstItem="Pya-hN-kNE" firstAttribute="trailing" secondItem="WbI-rD-yjn" secondAttribute="trailing" constant="136" id="2tS-cW-qgu"/>
@@ -313,6 +321,7 @@
                             <constraint firstItem="tef-Ei-Qh1" firstAttribute="top" secondItem="OSe-e8-CIi" secondAttribute="bottom" constant="99.5" id="FBX-2t-N1N"/>
                             <constraint firstItem="qER-NM-H8D" firstAttribute="leading" secondItem="Pya-hN-kNE" secondAttribute="leading" constant="13" id="GRt-ry-Cd5"/>
                             <constraint firstItem="Pya-hN-kNE" firstAttribute="bottom" secondItem="WbI-rD-yjn" secondAttribute="bottom" constant="46" id="L5M-Ab-96I"/>
+                            <constraint firstItem="Pya-hN-kNE" firstAttribute="trailing" secondItem="cdu-xD-DDo" secondAttribute="trailing" constant="116" id="LL3-ZH-04J"/>
                             <constraint firstItem="F4V-cM-DwT" firstAttribute="leading" secondItem="Pya-hN-kNE" secondAttribute="leading" constant="86" id="OKr-Gc-NPc"/>
                             <constraint firstItem="xn7-Cn-KaW" firstAttribute="leading" secondItem="Pya-hN-kNE" secondAttribute="leading" constant="292" id="ONK-Ms-aas"/>
                             <constraint firstItem="xn7-Cn-KaW" firstAttribute="top" secondItem="Pya-hN-kNE" secondAttribute="top" id="PDa-qP-Zg5"/>
@@ -321,12 +330,14 @@
                             <constraint firstItem="F4V-cM-DwT" firstAttribute="top" secondItem="tef-Ei-Qh1" secondAttribute="bottom" constant="59" id="W3w-cQ-3Dd"/>
                             <constraint firstItem="Pya-hN-kNE" firstAttribute="trailing" secondItem="qER-NM-H8D" secondAttribute="trailing" constant="11" id="Y07-90-Cel"/>
                             <constraint firstItem="Pya-hN-kNE" firstAttribute="trailing" secondItem="OSe-e8-CIi" secondAttribute="trailing" constant="20" id="YE9-rG-oo5"/>
+                            <constraint firstItem="Pya-hN-kNE" firstAttribute="bottom" secondItem="cdu-xD-DDo" secondAttribute="bottom" constant="12" id="Zbh-lJ-Ced"/>
                             <constraint firstAttribute="bottom" secondItem="TAx-cR-8jQ" secondAttribute="bottom" constant="19" id="abp-my-Mjs"/>
                             <constraint firstItem="Pya-hN-kNE" firstAttribute="trailing" secondItem="F4V-cM-DwT" secondAttribute="trailing" constant="91" id="bd2-OW-78w"/>
                             <constraint firstItem="OSe-e8-CIi" firstAttribute="top" secondItem="xn7-Cn-KaW" secondAttribute="bottom" constant="19" id="cNn-Dh-zTQ"/>
                             <constraint firstItem="TAx-cR-8jQ" firstAttribute="top" secondItem="h9Q-op-RX1" secondAttribute="bottom" constant="68.5" id="fPT-18-WLy"/>
                             <constraint firstItem="B6D-Ef-alv" firstAttribute="top" secondItem="qER-NM-H8D" secondAttribute="bottom" constant="8" id="i1g-f4-K74"/>
                             <constraint firstItem="B6D-Ef-alv" firstAttribute="top" secondItem="h9Q-op-RX1" secondAttribute="bottom" constant="68" id="jCx-ZZ-4vd"/>
+                            <constraint firstItem="cdu-xD-DDo" firstAttribute="leading" secondItem="Pya-hN-kNE" secondAttribute="leading" constant="118" id="o5p-Ez-G7M"/>
                             <constraint firstItem="h9Q-op-RX1" firstAttribute="top" secondItem="OSe-e8-CIi" secondAttribute="bottom" constant="8" id="sr8-lh-cUX"/>
                             <constraint firstItem="h9Q-op-RX1" firstAttribute="trailing" secondItem="Pya-hN-kNE" secondAttribute="trailing" id="tvU-J0-1Yf"/>
                             <constraint firstAttribute="bottom" secondItem="B6D-Ef-alv" secondAttribute="bottom" constant="15.5" id="yKW-mK-evd"/>
@@ -343,6 +354,7 @@
                         <outlet property="photoBtn" destination="B6D-Ef-alv" id="eb1-jm-Uns"/>
                         <outlet property="predictionInfoText" destination="qER-NM-H8D" id="JFB-NM-wPg"/>
                         <outlet property="predictionText" destination="OSe-e8-CIi" id="f32-fZ-2T7"/>
+                        <outlet property="shareBtn" destination="cdu-xD-DDo" id="yT2-ms-ujz"/>
                         <outlet property="tryAgainBtn" destination="WbI-rD-yjn" id="rdN-RF-dAo"/>
                     </connections>
                 </viewController>

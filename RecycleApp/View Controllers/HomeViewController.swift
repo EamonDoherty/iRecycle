@@ -4,7 +4,6 @@ import UIKit
 
 class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var Logo: UIImageView!
     @IBOutlet weak var predictionText: UILabel!
@@ -13,6 +12,8 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var CameraBtn: UIButton!
     @IBOutlet weak var photoBtn: UIButton!
     @IBOutlet weak var tryAgainBtn: UIButton!
+    @IBOutlet weak var shareBtn: UIButton!
+    
     
     var model:recycleMaterial!
    
@@ -20,13 +21,13 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         super.viewDidLoad()
         self.predictionText.alpha = 0
         self.tryAgainBtn.alpha = 0
+        self.shareBtn.alpha = 0
     }
     
     override func viewWillAppear(_ animated: Bool) {
           model = recycleMaterial()
     }
-    
-    
+        
     @IBAction func camera(_ sender: UIButton) {
         
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
@@ -37,7 +38,6 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             present(imagePicker, animated: true, completion: nil)
         }
     }
-    
 
     @IBAction func cameraRoll(_ sender: UIButton) {
         
@@ -49,6 +49,27 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
             present(imagePicker, animated: true, completion: nil)
         }
     }
+    
+    
+    @IBAction func socialShareBtn(_ sender: Any) {
+        //screen shot
+        UIGraphicsBeginImageContext(self.view.bounds.size)
+        self.view.drawHierarchy(in: view.bounds, afterScreenUpdates: false)
+        let screenImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+//        let text = "Hey, check out this app iRecycle"
+        
+        
+        //sharing
+        var imagesToShare = [AnyObject]()
+        
+        imagesToShare.append(screenImage as AnyObject)
+
+        let activityViewController = UIActivityViewController(activityItems: imagesToShare, applicationActivities: nil)
+        activityViewController.popoverPresentationController?.sourceView = self.view
+        present(activityViewController, animated: true, completion: nil)
+    }
+    
 
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[UIImagePickerController.InfoKey.originalImage] as! UIImage
@@ -61,6 +82,7 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         self.photoBtn.alpha = 0
         self.predictionText.alpha = 1
         self.tryAgainBtn.alpha = 1
+        self.shareBtn.alpha = 1
         
         //Resize image
         //convert the image size
@@ -97,7 +119,6 @@ class HomeViewController: UIViewController, UIImagePickerControllerDelegate, UIN
         
         
         //predict image label
-        
         guard let prediction = try? model.prediction(image: pixelBuffer!) else {
               predictionText.text = "Can't Predict!"
               return
